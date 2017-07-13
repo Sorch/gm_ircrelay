@@ -129,7 +129,7 @@ hook.Add("PlayerConnect", "IRCRelayPlayerConnect", function(ply)
 end)
 
 hook.Add("PlayerDisconnected", "IRCRelayPlayerConnect", function(ply)
-	ircrelay.sendMsg(ply:Nick().. " has disconnected from the server!", ircrleay.config.relayChannel)
+	ircrelay.sendMsg(ply:Nick().. " has disconnected from the server!", ircrelay.config.relayChannel)
 end)
 
 
