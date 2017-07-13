@@ -44,7 +44,7 @@ function replies.ping(prefix, rest)
 end
 
 replies["376"] = function(prefix, rest)
-	send(ircrelay.config.relayChannel)
+	send("JOIN " .. ircrelay.config.relayChannel)
 end
 
 
